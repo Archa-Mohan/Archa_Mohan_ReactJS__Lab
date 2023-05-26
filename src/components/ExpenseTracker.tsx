@@ -23,7 +23,7 @@ const ExpenseTracker = ({ onTrue, onClose }: Props) => {
     event.preventDefault();
     const finalItem = { payeeName, product, price, setDate };
     const data = await postNewItem(finalItem);
-    onTrue();
+    // onTrue();
   }
   function setPayee(event: React.ChangeEvent<HTMLSelectElement>) {
     setPayeeName(event.target.value);

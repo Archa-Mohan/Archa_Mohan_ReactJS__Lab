@@ -1,5 +1,5 @@
 import axios from "axios";
-import IProduct from "../model/IProuct";
+import IProduct from "../model/IProduct";
 
 const getItemsFromServer = () => {
   return axios

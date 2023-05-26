@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import IProduct from "../model/IProuct";
+import IProduct from "../model/IProduct";
 import { getItemsFromServer } from "../service/dataService";
 import ExpenseTracker from "./ExpenseTracker";
 
@@ -36,7 +36,7 @@ function ShowList() {
 
   useEffect(() => {
     fetchItems();
-  }, []);
+  }, [fetchItems]);
 
   const success = () => {
     setShowForm(false);
